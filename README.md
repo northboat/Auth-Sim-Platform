@@ -1,4 +1,4 @@
-# Auth-Sim-Platform
+# ECC-Auth-Platform
 
 一个身份认证的仿真平台，主要模拟一些基于 ECC 的轻量认证过程，前后端不分离（省事），环境
 
