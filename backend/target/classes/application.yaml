@@ -1,26 +1,24 @@
-
 spring:
   application:
-    name: Auth-Sim
+    name: ECC-Auth-Platform
   datasource:
     username: root
     password: ""
-    url: jdbc:mysql://localhost:3306/authsim?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://localhost:3306/auth_platform?useUnicode=true&characterEncoding=utf-8
     driver-class-name: com.mysql.cj.jdbc.Driver
   thymeleaf:
     cache: false
   data:
     redis:
-      host: 43.163.218.127
+      host: 43.156.105.197
       port: 6379
       password: ""
-
-
-#整合mybatis
-mybatis:
-  type-aliases-package: cia.northboat.authsim.dto
-  # classpath 指 resources 目录
-  mapper-locations: classpath:/mapper/*.xml
+  jpa:
+    hibernate:
+      ddl-auto: update  # 自动更新数据库结构
+    show-sql: true  # 打印 SQL 查询
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQL8Dialect  # MySQL方言
 
 server:
   port: 8080
