@@ -1,11 +1,15 @@
 # ECC-Auth-Platform
 
-一个身份认证的仿真平台，主要模拟一些基于 ECC 的轻量认证过程，前后端不分离（省事），环境
+一个身份认证的仿真平台，主要模拟一些基于 ECC 的轻量认证过程，环境
 
 - JDK 17
 - JPBC 2.0.0
 - Maven 3.9.1
-- Springboot 3.0.2 
+- Springboot 3.0.2
+   - Thymeleaf 3.1.1
+   - Data JPA 3.0.2
+   - Spring Security 6.0.1
+   - Redis 3.0.1
 
 准备实现的需求
 
